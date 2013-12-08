@@ -6,7 +6,7 @@ include 'header.php';
 echo '<h2>Sign out</h2>';
 
 //check if user if signed in
-if($_SESSION['signed_in'] == true)
+if(isset($_SESSION['signed_in']) == true)
 {
 	//unset all variables
 	$_SESSION['signed_in'] = NULL;
