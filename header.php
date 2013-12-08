@@ -15,7 +15,7 @@
 		
 		<div id="userbar">
 		<?php
-		if($_SESSION['signed_in'])
+		if(isset($_SESSION['signed_in']))
 		{
 			echo 'Hello <b>' . htmlentities($_SESSION['user_name']) . '</b>. Not you? <a class="item" href="signout.php">Sign out</a>';
 		}

@@ -13,6 +13,8 @@ if($_SESSION['signed_in'] == true)
 	$_SESSION['user_name'] = NULL;
 	$_SESSION['user_id']   = NULL;
 
+	session_destroy();
+
 	echo 'Succesfully signed out, thank you for visiting.';
 }
 else
