@@ -68,7 +68,7 @@ else
 				}
 			}
 			
-			if(!$_SESSION['signed_in'])
+			if(!isset($_SESSION['signed_in']))
 			{
 				echo '<tr><td colspan=2>You must be <a href="signin.php">signed in</a> to reply. You can also <a href="signup.php">sign up</a> for an account.';
 			}
